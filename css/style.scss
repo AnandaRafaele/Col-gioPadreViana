@@ -35,6 +35,7 @@ $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 $accessBar: #EAB11F;
+$addressBar: #C79512;
 
 $colors: () !default;
 $colors: map-merge((
@@ -72,7 +73,8 @@ $theme-colors: map-merge((
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "accessBar":  $accessBar
+  "accessBar":  $accessBar,
+  "barAddress": $addressBar
 ), $theme-colors);
 // stylelint-enable
 
