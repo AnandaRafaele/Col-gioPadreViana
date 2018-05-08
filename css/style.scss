@@ -99,25 +99,34 @@ $line-height-base:            1.5 !default;
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-$accessFont: $white;
-$newsIcon: 30px;
-
 body{
   font-family: 'Montserrat', sans-serif;
 }
 
-ul>ul{
-  font-size: $font-size-lg;
-}
-
-li a{
-  font-size: .8rem;
-  color:$accessFont;}
-    a:hover{
-      color: $accessFont;
-      font-weight: bold;   
-}
+// li a{
+//   font-size: .8rem;
+//   color:$accessFont;}
+//     a:hover{
+//       color: $accessFont;
+//       font-weight: bold;   
+// }
 
 i#news_icon{
   font-size: 30px;
+}
+
+li a{
+  color: white;
+  a:hover{
+    color: white;
+    font-weight: bold;
+  }
+}
+
+div#navbarSupportedContent{
+  font-size: .9rem;
+}
+
+nav#accessibility{
+  font-size: .75rem;
 }

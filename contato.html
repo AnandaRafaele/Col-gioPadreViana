@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CONTATO | Colégio Padre Viana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.min.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+    <!-- Icones -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-accessBar py-0" id="accessibility">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">[1] Mapa do site</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#content" accesskey="2">[2] Ir para conteúdo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#searchFrom" accesskey="3">[3] Ir para pesquisa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">[4] Alto contraste</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onClick="fonte('d');" href="#">A-</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">A</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onClick="fonte('a');" href="#">A+</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container my-3">
+            <div class="row">
+                <div class="col">
+                    <div class="logomarca">
+                        <img src="img/logo.png" alt="Logomarca do Colégio" title="Escudo do Colégio" class="rounded mx-auto d-block">
+                    </div>
+                </div>
+                <div class="col">
+                    <form class="pagination justify-content-center pt-5" id="searchFrom">
+                        <input class="form-control col-lg-8" type="search " placeholder="Pesquisar..." aria-label="Search" id="inpSearch">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                            <i class="material-icons">search</i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-accessBar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="container">
+                <ul class="row navbar-nav mr-auto" id="menu">
+                    <li class="col-lg-2 nav-item active">
+                        <a class="nav-link" href="#">INÍCIO</a>
+                    </li>
+                    <li class="col-lg-2 nav-item active">
+                        <a class="nav-link" href="#">INFANTIL</a>
+                    </li>
+                    <li class="col-lg-2 nav-item active">
+                        <a class="nav-link" href="#">FUNDAMENTAL I</a>
+                    </li>
+                    <li class="col-lg-2 nav-item active">
+                        <a class="nav-link" href="#">FUNDAMENTAL II</a>
+                    </li>
+                    <li class="col-lg-2 nav-item active">
+                        <a class="nav-link" href="#">MÉDIO</a>
+                    </li>
+                    <li class="col-lg-2 nav-item active">
+                        <a class="nav-link" href="#" i>CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="content">
+        <div class="container">
+            <div class="py-2 text-center">
+                <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                <h2>Fale Conosco</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 order-md-1">
+                    <form class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label for="firstName">Nome</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email
+                                <span class="text-muted"></span>
+                            </label>
+                            <input type="email" class="form-control" id="email" placeholder="exemplo@example.com">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message">Mensagem
+                                <span class="text-muted"></span>
+                            </label>
+                            <textarea type="message" class="form-control" rows="5" id="message" placeholder="Escreva sua mensagem aqui..."></textarea>
+                            <div class="invalid-feedback">
+                                Escreva sua mensagem aqui
+                            </div>
+                        </div>                   
+                        <hr class="mb-4">
+                        <button class="btn btn-success btn-lg btn-block" type="submit">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>
