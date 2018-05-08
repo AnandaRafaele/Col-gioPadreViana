@@ -1,0 +1,18 @@
+{
+  "name": "TrabalhoIntefacesWeb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch css/style.scss css/style.css",
+    "sass-min": "node-sass --watch css/style.scss css/style.min.css --output-style compressed"
+  },
+  "keywords": [],
+  "author": "Ananda Rafaele",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}
