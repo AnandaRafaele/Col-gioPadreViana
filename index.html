@@ -9,6 +9,10 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.min.css" />
     <script src="js/bootstrap.min.js"></script>
 
+
+    <link rel="stylesheet" href="css/AltoContraste.css">
+
+
     <!-- Icones -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -27,7 +31,8 @@
                 <a class="nav-link" href="#searchFrom" accesskey="3">[3] Ir para pesquisa</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">[4] Alto contraste</a>
+                <a class="nav-link" href="#" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast();"
+                    style="color: #000000;">[4] Alto contraste</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" onClick="fonte('d');" href="#">A-</a>
@@ -65,9 +70,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-accessBar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
-
         </button>
-
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="container">
@@ -189,53 +192,64 @@
                     <nav class="navbar col-lg-4">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item py-2">
-                                <a href="#">
-                                    <i class="material-icons">calendar_today</i>Calendário Escolar</a>
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mx-3">calendar_today</i>Calendário Escolar
+                                    <p class="text-center">Conheça as atividades do ano letivo.</p>
+                                </a>
                             </li>
                             <li class="nav-item py-2">
-                                <a href="#"><i class="material-icons">list_alt</i>Boletim Escolar</a>
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mx-3">list_alt</i>Boletim Escolar</a>
                             </li>
                             <li class="nav-item py-2">
-                                <a href="#">
-                                    <i class="material-icons">event</i>Eventos</a>
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mx-3">event</i>Eventos</a>
                             </li>
                             <li class="nav-item py-2">
-                                <a href="#"><i class="material-icons">description</i>Projetos</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="navbar col-lg-4">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item py-2">
-                                <a href="#"><i class="material-icons">school</i>Escudo do Colégio</a>
-                                <span>Entenda tudo sobre o nosso escudo.</span>
-                            </li>
-                            <li class="nav-item py-2">
-                                <a href="#">
-                                    <i class="material-icons">photo_library</i>Galeria de Fotos</a>
-                            </li>
-                            <li class="nav-item py-2">
-                                <a href="#"><i class="material-icons">thumb_up_alt</i>Destaques</a>
-                            </li>
-                            <li class="nav-item py-2">
-                                <a href="#"><i class="material-icons">library_books</i>Manual do Aluno</a>
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mx-3">description</i>Projetos</a>
                             </li>
                         </ul>
                     </nav>
                     <nav class="navbar col-lg-4">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item py-2">
-                                <a href="#"><i class="material-icons">group</i>Nossa Equipe</a>
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mx-3">school</i>Escudo do Colégio</a>
                             </li>
                             <li class="nav-item py-2">
-                                <a href="#"><i class="material-icons">music_note</i>Fanfarra</a>
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mx-3">photo_library</i>Galeria de Fotos</a>
                             </li>
                             <li class="nav-item py-2">
-                                <a href="#"><i class="material-icons">person</i>Professor José Teles</a>
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mx-3">thumb_up_alt</i>Destaques</a>
                             </li>
                             <li class="nav-item py-2">
-                                <a href="#">
-                                    <i class="material-icons">info</i>Sobre o Colégio</a>
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mx-3">library_books</i>Manual do Aluno</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="navbar col-lg-4">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item py-2">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mx-3">group</i>Nossa Equipe</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mx-3">music_note</i>Fanfarra</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mx-3">person</i>Professor José Teles
+                                    <p class="text-center">Conheça a história do nosso Professor.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mx-3">info</i>Sobre o Colégio</a>
                             </li>
                         </ul>
                     </nav>
@@ -244,10 +258,14 @@
         </section>
 
         <address class="bg-barAddress py-2 mb-0">
-            <p>Provided by - Alunos da FJN do curso de Sistemas de Informação</p>
-            <p>Copyright © 2015 Colégio Padre Viana. Todos os direitos reservados.</p>
+            <p>Copyright © 2015 Colégio Padre Viana. Todos os direitos reservados. Provided by - 5º Semestre 2018</p>
+
         </address>
     </footer>
+
+
+    <!-- Alto Contraste-->
+    <script src="js/FuncaoAltoContraste.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
