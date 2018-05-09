@@ -113,14 +113,6 @@ body{
 //       font-weight: bold;   
 // }
 
-li a{
-  color: white;
-  a:hover{
-    color: white;
-    font-weight: bold;
-  }
-}
-
 div#navbarSupportedContent{
   font-size: .9rem;
 }
@@ -134,6 +126,16 @@ address{
   text-align: center;
 }
 
-a p{
-  font-size: .7rem;
+a {
+  color: white;
+  p{
+    font-size: .7rem;
+  }
+}
+
+.material-icons::before { 
+  content: "";
+  font-size: .9rem;
+  display:table-cell;
+  vertical-align:middle;
 }

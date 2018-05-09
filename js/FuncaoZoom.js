@@ -1,4 +1,4 @@
-var tam = 16; 
+var tam = 1rem; 
 
 function mudaFonte(tipo,elemento){ 
 	if (tipo=="mais") { 

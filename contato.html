@@ -4,35 +4,43 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CONTATO | Colégio Padre Viana</title>
+    <title>INICIO | Colégio Padre Viana</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.min.css" />
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Alto Contraste-->
+    <link rel="stylesheet" href="css/AltoContraste.css">
+
+    <!-- Tamanho da Fonte -->
+    <script src="js/fonte.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Icones -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-accessBar py-0" id="accessibility">
-        <ul class="navbar-nav">
+
+    <nav class="navbar navbar-expand-lg bg-accessBar py-0 acessibilidade" id="accessibility">
+        <ul class="nav justify-content-end">
             <li class="nav-item">
-                <a class="nav-link" href="#">[1] Mapa do site</a>
+                <a class="nav-link" href="#content" accesskey="1">[1] Ir para conteúdo</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#content" accesskey="2">[2] Ir para conteúdo</a>
+                <a class="nav-link" href="#searchFrom" accesskey="2">[2] Ir para pesquisa</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#searchFrom" accesskey="3">[3] Ir para pesquisa</a>
+                <a class="nav-link" href="#" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast();">[3 ] Alto contraste</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">[4] Alto contraste</a>
+                <a class="nav-link" onClick="fonte('b');" href="#">A-</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" onClick="fonte('d');" href="#">A-</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">A</a>
+                <a class="nav-link" id="" onClick="fonte('c');" href="#">A</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" onClick="fonte('a');" href="#">A+</a>
@@ -40,7 +48,7 @@
         </ul>
     </nav>
     <header>
-        <div class="container my-3">
+        <div class="container my-3 acessibilidade">
             <div class="row">
                 <div class="col">
                     <div class="logomarca">
@@ -59,18 +67,16 @@
                 </div>
             </div>
         </div>
-        </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-accessBar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-accessBar  acessibilidade">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse acessibilidade" id="navbarSupportedContent">
             <div class="container">
-                <ul class="row navbar-nav mr-auto" id="menu">
-
-                    <li class="m-auto nav-item active">
+                <ul class="navbar-nav mr-auto" id="menu">
+                    <li class="m-auto nav-item">
                         <a class="nav-link" href="index.html">INÍCIO</a>
                     </li>
                     <li class="m-auto nav-item ">
@@ -86,18 +92,17 @@
                         <a class="nav-link" href="#">MÉDIO</a>
                     </li>
                     <li class="m-auto nav-item ">
-                        <a class="nav-link" href="contato.html" i>CONTATO</a>
+                        <a class="nav-link active" href="contato.html" i>CONTATO</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <section id="content">
         <div class="container">
             <div class="py-2 text-center">
                 <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-                <h2>Fale Conosco</h2>
+                <h1>Fale Conosco</h1>
             </div>
 
             <div class="row">
@@ -108,7 +113,7 @@
                                 <label for="firstName">Nome</label>
                                 <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                                 <div class="invalid-feedback">
-                                    Valid first name is required.
+                                    Por favor, coloque um nome válido!
                                 </div>
                             </div>
                         </div>
@@ -116,7 +121,7 @@
                             <label for="email">Email
                                 <span class="text-muted"></span>
                             </label>
-                            <input type="email" class="form-control" id="email" placeholder="exemplo@example.com">
+                            <input type="email" class="form-control" id="email" placeholder="exemplo@example.com" required>
                             <div class="invalid-feedback">
                                 Por favor coloque eu email válido.
                             </div>
@@ -125,17 +130,143 @@
                             <label for="message">Mensagem
                                 <span class="text-muted"></span>
                             </label>
-                            <textarea type="message" class="form-control" rows="5" id="message" placeholder="Escreva sua mensagem aqui..."></textarea>
+                            <textarea type="message" class="form-control" rows="5" id="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
                             <div class="invalid-feedback">
                                 Escreva sua mensagem aqui
                             </div>
                         </div>
                         <hr class="mb-4">
-                        <button class="btn btn-success btn-lg btn-block" type="submit">Enviar mensagem</button>
+                        <button class="btn btn-success btn-lg btn-block" type="submit"><i class="material-icons align-text-top mr-3">send</i>Enviar mensagem</button>
                     </form>
                 </div>
             </div>
     </section>
+    <footer class="text-light mt-5">
+        <section class="bg-accessBar">
+            <h2 class="pt-2 pl-4  acessibilidade">SERVIÇOS E UTILIDADES</h2>
+            <hr class="bg-white">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar col-lg-4">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">calendar_today</i>Calendário Escolar
+                                    <p class="text-center acessibilidade">Conheça as atividades do ano letivo.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">list_alt</i>Boletim Escolar
+                                    <p class="text-center">Acesso dos alunos as notas e frequências.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">event</i>Eventos
+                                    <p class="text-center">Confira os todos os eventos do colégio.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">description</i>Projetos
+                                    <p class="text-center">Fique por dentro dos projetos do colégio.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="navbar col-lg-4">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">school</i>Escudo do Colégio
+                                    <p class="text-center">Entenda tudo sobre o nosso escudo.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">photo_library</i>Galeria de Fotos
+                                    <p class="text-center">Visite nossa galeria de fotos.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">thumb_up_alt</i>Destaques
+                                    <p class="text-center">Fique por dentro dos nossos destaques.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">library_books</i>Manual do Aluno
+                                    <p class="text-center">Conheça o manual dos nossos alunos.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="navbar col-lg-4">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">group</i>Nossa Equipe
+                                    <p class="text-center">Conheça a equipe do colégio.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">music_note</i>Fanfarra
+                                    <p class="text-center">Conheça a fanfarra do colégio.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">person</i>Professor José Teles
+                                    <p class="text-center">Conheça a história do nosso Professor.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">info</i>Sobre o Colégio
+                                    <p class="text-center">Conheça nossa história.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <div class="container bg-barAddress py-2 mb-0">
+            <address>
+                <p>Copyright © 2015 Colégio Padre Viana. Todos os direitos reservados.</p>
+            </address>
+        </div>
+    </footer>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+    </script>
 </body>
 
 </html>
