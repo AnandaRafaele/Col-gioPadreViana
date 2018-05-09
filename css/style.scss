@@ -126,8 +126,12 @@ address{
   font-style: italic;
 }
 
+li a:hover{
+  font-weight: bolder;
+}
+
 a {
-  color: white;
+  color: white !important;
   p{
     font-size: .7rem;
   }
