@@ -123,7 +123,6 @@ nav#accessibility{
 
 address{
   font-style: italic;
-  text-align: center;
 }
 
 a {
@@ -135,7 +134,6 @@ a {
 
 .material-icons::before { 
   content: "";
-  font-size: .9rem;
-  display:table-cell;
+  display:inline-block;
   vertical-align:middle;
 }
