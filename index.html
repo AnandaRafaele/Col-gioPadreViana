@@ -1,4 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -9,9 +9,12 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.min.css" />
     <script src="js/bootstrap.min.js"></script>
 
-
+    <!-- Alto Contraste-->
     <link rel="stylesheet" href="css/AltoContraste.css">
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Icones -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,27 +23,24 @@
 <body>
 
     <nav class="navbar navbar-expand-lg bg-accessBar py-0" id="accessibility">
-        <ul class="navbar-nav">
+        <ul class="nav justify-content-end">
             <li class="nav-item">
-                <a class="nav-link" href="#">[1] Mapa do site</a>
+                <a class="nav-link" href="#content" accesskey="1">[1] Ir para conteúdo</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#content" accesskey="2">[2] Ir para conteúdo</a>
+                <a class="nav-link" href="#searchFrom" accesskey="2">[2] Ir para pesquisa</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#searchFrom" accesskey="3">[3] Ir para pesquisa</a>
+                <a class="nav-link" href="#" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast();">[3 ] Alto contraste</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" id="altocontraste" accesskey="4" onclick="window.toggleContrast()" onkeydown="window.toggleContrast();">[4] Alto contraste</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" onClick="fonte('d');" href="#">A-</a>
+                <a class="nav-link" href="#">A-</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">A</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" onClick="fonte('a');" href="#">A+</a>
+                <a class="nav-link" href="#">A+</a>
             </li>
         </ul>
     </nav>
@@ -73,8 +73,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="container">
-                <ul class="row navbar-nav mr-auto" id="menu">
-
+                <ul class="navbar-nav mr-auto" id="menu">
                     <li class="m-auto nav-item active">
                         <a class="nav-link" href="index.html">INÍCIO</a>
                     </li>
@@ -263,7 +262,6 @@
         <div class="container bg-barAddress py-2 mb-0">
             <address>
                 <p>Copyright © 2015 Colégio Padre Viana. Todos os direitos reservados. Provided by - 5º Semestre 2018</p>
-
             </address>
         </div>
     </footer>
