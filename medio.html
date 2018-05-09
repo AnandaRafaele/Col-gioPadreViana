@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>INICIO | Colégio Padre Viana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.min.css" />
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Alto Contraste-->
+    <link rel="stylesheet" href="css/AltoContraste.css">
+
+    <!-- Tamanho da Fonte -->
+    <script src="js/fonte.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Icones -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Mudar cor do link -->
+    <style>
+        section a {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-accessBar py-0 acessibilidade" id="accessibility">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="#content" accesskey="1">[1] Ir para conteúdo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#searchFrom" accesskey="2">[2] Ir para pesquisa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast();">[3 ] Alto contraste</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onClick="fonte('b');" href="#">A-</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="" onClick="fonte('c');" href="#">A</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onClick="fonte('a');" href="#">A+</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container my-3 acessibilidade">
+            <div class="row">
+                <div class="col">
+                    <div class="logomarca">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="Logomarca do Colégio" title="Escudo do Colégio" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <form class="pagination pt-5" id="searchFrom">
+                        <input class="form-control col-lg-8" type="search " placeholder="Pesquisar..." aria-label="Search" id="inpSearch">
+                        <button class="btn btn-outline-success my-2 my-sm-0 mx-3" type="submit">
+                            <i class="material-icons align-text-top">search</i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-accessBar  acessibilidade">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse acessibilidade" id="navbarSupportedContent">
+            <div class="container">
+                <ul class="navbar-nav mr-auto" id="menu">
+                    <li class="m-auto nav-item">
+                        <a class="nav-link" href="index.html">INÍCIO</a>
+                    </li>
+                    <li class="m-auto nav-item ">
+                        <a class="nav-link" href="infantil.html">INFANTIL</a>
+                    </li>
+                    <li class="m-auto nav-item ">
+                        <a class="nav-link" href="fundamentalI.html">FUNDAMENTAL I</a>
+                    </li>
+                    <li class="m-auto nav-item">
+                        <a class="nav-link" href="fundamentalII.html">FUNDAMENTAL II</a>
+                    </li>
+                    <li class="m-auto nav-item active">
+                        <a class="nav-link" href="medio.html">MÉDIO</a>
+                    </li>
+                    <li class="m-auto nav-item ">
+                        <a class="nav-link" href="contato.html" i>CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Proposta Pedagógica - Médio</h2>
+                    <hr>
+                    <ol>
+                        <li>
+                            <p>Um planejamento de ensino inovador, contextualizando o saber através de atividades de laboratório,
+                                programas recreativos incluindo artes, ciências, práticas de laboratório e projetos de campo.</p>
+                        </li>
+                        <li>
+                            <p>Um novo jeito de ensinar, sem abrir mão de muito esforço, dedicação e disciplina por parte do
+                                aluno.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Compromisso com o aproveitamento individual do aluno. No Colégio Padre Viana todas as turmas
+                                são especiais.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Formação moral, ética e cristã como base da formação do aluno.</p>
+                        </li>
+                        <li>
+                            <p>Sedes planejadas para serem centros de excelência educacional, oferecendo ao aluno acesso à tecnologia,
+                                arte, cultura e ciência.</p>
+                        </li>
+                        <li>
+                            <p>Ênfase no domínio da Língua Portuguesa e da Matemática com projetos especiais que preparam o
+                                aluno para o moderno campo de trabalho.</p>
+                        </li>
+                        <li>
+                            <p>Uso das novas tecnologias nas salas de aula, inclusive da Internet, com o desenvolvimento de
+                                atividades e projetos especiais através do melhor portal educacional do país.</p>
+                        </li>
+                    </ol>
+
+                    <a href="#" class="card-link">
+                        <i class="material-icons">chevron_right</i>Relação de material 1º Ano do Ensino Médio</a>
+                    <br>
+                    <a href="#" class="card-link">
+                        <i class="material-icons">chevron_right</i>Relação de material 2º Ano do Ensino Médio</a>
+                    <br>
+                    <a href="#" class="card-link">
+                        <i class="material-icons">chevron_right</i>Relação de material 3º Ano do Ensino Médio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="text-light mt-5">
+        <section class="bg-accessBar">
+            <h2 class="pt-2 pl-4  acessibilidade">SERVIÇOS E UTILIDADES</h2>
+            <hr class="mb-4 bg-white">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar col-lg-4">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">calendar_today</i>Calendário Escolar
+                                    <p class="text-center acessibilidade">Conheça as atividades do ano letivo.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">list_alt</i>Boletim Escolar
+                                    <p class="text-center">Acesso dos alunos as notas e frequências.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">event</i>Eventos
+                                    <p class="text-center">Confira os todos os eventos do colégio.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">description</i>Projetos
+                                    <p class="text-center">Fique por dentro dos projetos do colégio.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="navbar col-lg-4">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">school</i>Escudo do Colégio
+                                    <p class="text-center">Entenda tudo sobre o nosso escudo.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">photo_library</i>Galeria de Fotos
+                                    <p class="text-center">Visite nossa galeria de fotos.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">thumb_up_alt</i>Destaques
+                                    <p class="text-center">Fique por dentro dos nossos destaques.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">library_books</i>Manual do Aluno
+                                    <p class="text-center">Conheça o manual dos nossos alunos.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="navbar col-lg-4">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">group</i>Nossa Equipe
+                                    <p class="text-center">Conheça a equipe do colégio.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">music_note</i>Fanfarra
+                                    <p class="text-center">Conheça a fanfarra do colégio.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">person</i>Professor José Teles
+                                    <p class="text-center">Conheça a história do nosso Professor.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">info</i>Sobre o Colégio
+                                    <p class="text-center">Conheça nossa história.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-barAddress py-2">
+            <address>
+                <p class="text-center">Copyright © 2015 Colégio Padre Viana. Todos os direitos reservados.</p>
+            </address>
+        </div>
+    </footer>
+
+    <!-- Alto Contraste-->
+    <script src="js/FuncaoAltoContraste.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T "
+        crossorigin="anonymous "></script>
+
+</body>
+
+</html>
