@@ -12,6 +12,9 @@
     <!-- Alto Contraste-->
     <link rel="stylesheet" href="css/AltoContraste.css">
 
+    <!-- Tamanho da Fonte -->
+    <script src="js/fonte.js"></script>
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -22,7 +25,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-accessBar py-0" id="accessibility">
+    <nav class="navbar navbar-expand-lg bg-accessBar py-0 acessibilidade" id="accessibility">
         <ul class="nav justify-content-end">
             <li class="nav-item">
                 <a class="nav-link" href="#content" accesskey="1">[1] Ir para conteúdo</a>
@@ -34,18 +37,18 @@
                 <a class="nav-link" href="#" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast();">[3 ] Alto contraste</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">A-</a>
+                <a class="nav-link" onClick="fonte('b');" id="mais" href="#">A-</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">A</a>
+                <a class="nav-link" id="" href="#">A</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">A+</a>
+                <a class="nav-link" onClick="fonte('a');" href="javascript:void(0);">A+</a>
             </li>
         </ul>
     </nav>
     <header>
-        <div class="container my-3">
+        <div class="container my-3 acessibilidade">
             <div class="row">
                 <div class="col">
                     <div class="logomarca">
@@ -64,14 +67,13 @@
                 </div>
             </div>
         </div>
-        </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-accessBar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-accessBar  acessibilidade">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse acessibilidade" id="navbarSupportedContent">
             <div class="container">
                 <ul class="navbar-nav mr-auto" id="menu">
                     <li class="m-auto nav-item active">
@@ -97,7 +99,7 @@
         </div>
     </nav>
     <section id="content">
-        <div class="slideBanner">
+        <div class="slideBanner acessibilidade">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -132,7 +134,7 @@
         </div>
         <section>
             <div class="navbar navbar-expand-lg bg-accessBar text-light">
-                <h2>NOTÍCIAS</h2>
+                <h2 class="acessibilidade">NOTÍCIAS</h2>
             </div>
             <div class="container">
                 <div class="row">
@@ -152,8 +154,8 @@
             </div>
         </section>
         <section>
-            <div class="navbar navbar-expand-lg bg-accessBar text-light">
-                <h2>EVENTOS</h2>
+            <div class="navbar navbar-expand-lg bg-accessBar text-light acessibilidade">
+                <h2 class="acessibilidade">EVENTOS</h2>
             </div>
             <div class="container">
                 <div class="row">
@@ -187,7 +189,7 @@
     </section>
     <footer class="text-light">
         <section class="bg-accessBar">
-            <h2 class="pt-2 px-2">SERVIÇOS E UTILIDADES</h2>
+            <h2 class="pt-2 px-2  acessibilidade">SERVIÇOS E UTILIDADES</h2>
             <hr class="bg-white">
             <div class="container">
                 <div class="row">
@@ -196,7 +198,7 @@
                             <li class="nav-item py-2">
                                 <a class="nav-link" href="#">
                                     <i class="material-icons mx-3">calendar_today</i>Calendário Escolar
-                                    <p class="text-center">Conheça as atividades do ano letivo.</p>
+                                    <p class="text-center acessibilidade">Conheça as atividades do ano letivo.</p>
                                 </a>
                             </li>
                             <li class="nav-item py-2">
