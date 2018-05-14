@@ -126,7 +126,7 @@ address{
   font-style: italic;
 }
 
-li a:hover{
+a:hover{
   font-weight: bolder;
 }
 
@@ -138,8 +138,13 @@ a {
 }
 
 .material-icons::before { 
-  content: "";
-  display:inline-block;
-  vertical-align:middle;
-  color: white;
+//   content: "";
+//   display:inline-block;
+//   vertical-align:middle;
+//   color: white;
+font-size: 35px;
+ }
+
+button.searchIcon:hover{
+  color:white;
 }
