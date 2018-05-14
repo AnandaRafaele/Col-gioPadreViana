@@ -38,6 +38,9 @@
 }
 
 .contrast button,
+.contrast h2,
+.contrast small,
+.contrast p,
 .contrast input[type=button],
 .contrast input[type=reset],
 .contrast input[type=submit] {
