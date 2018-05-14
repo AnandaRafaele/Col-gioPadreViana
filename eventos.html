@@ -9,6 +9,12 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.min.css" />
     <script src="js/bootstrap.min.js"></script>
 
+    <script>
+        function foco() {
+            document.getElementById('inpSearch').focus();
+        }
+    </script>
+
     <!-- Alto Contraste-->
     <link rel="stylesheet" href="css/AltoContraste.css">
 
@@ -24,13 +30,14 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg bg-accessBar py-0" id="accessibility">
         <ul class="nav justify-content-end">
             <li class="nav-item">
                 <a class="nav-link" href="#content" accesskey="1">[1] Ir para conteúdo</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#searchFrom" accesskey="2">[2] Ir para pesquisa</a>
+                <a class="nav-link" href="#" onclick="foco();" accesskey="2">[2] Ir para pesquisa</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast();">[3 ] Alto contraste</a>
@@ -59,7 +66,7 @@
                 <div class="col-lg-4">
                     <form class="pagination pt-5" id="searchFrom">
                         <input class="form-control col-lg-8" type="search " placeholder="Pesquisar..." aria-label="Search" id="inpSearch">
-                        <button class="btn btn-outline-success my-2 my-sm-0 mx-3" type="submit">
+                        <button class="btn btn-outline-warning my-2 my-sm-0 mx-3 searchIcon" type="submit">
                             <i class="material-icons align-text-top">search</i>
                         </button>
                     </form>
@@ -111,7 +118,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/events/2018/CampanhaFraternidade/CampanhaFraternidade.jpg" alt="Card image cap">
+                            <a href="#"><img class="card-img-top" src="img/events/2018/CampanhaFraternidade/CampanhaFraternidade.jpg" alt="Campanha da fraternidade - 2018"></a>
                             <div class="card-body">
                                 <p class="card-text">Nossos alunos foram realizar a nossa campanha da fraternidade, onde eles saíram à rua para
                                     divulgar esse [...]</p>
@@ -126,7 +133,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/events/2018/Carnaval/Carnaval.jpg" alt="Card image cap">
+                            <a href="#"><img class="card-img-top" src="img/events/2018/Carnaval/Carnaval.jpg" alt="Carnaval - 2018"></a>
                             <div class="card-body">
                                 <p class="card-text">E é assim que nosso alunos comemoram o carnaval. Com muita folia e diversão!</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -139,7 +146,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/events/2018/SemanaPedagogica/SemanaPedagogica.jpg" alt="Card image cap">
+                            <a href="#"><img class="card-img-top" src="img/events/2018/SemanaPedagogica/SemanaPedagogica.jpg" alt="Semana Pedagógica 2018"></a>
                             <div class="card-body">
                                 <p class="card-text">Semana Pedagógica 2018 - Como tudo na vida, o trabalho escolar é cíclico. Encerramos [...]</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -153,7 +160,7 @@
 
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/events/2017/FormaturaABC/FormaturaABC.jpg" alt="Card image cap">
+                            <a href="#"><img class="card-img-top" src="img/events/2017/FormaturaABC/FormaturaABC.jpg" alt="Formatura ABC - 2017"></a>
                             <div class="card-body">
                                 <p class="card-text">Formatura de ABC da turma do Infantil 5 - 2017, realizada no Colégio Padre Viana. </p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -166,7 +173,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/events/2017/VisitaHorto-Unileao/visita.jpg" alt="Card image cap">
+                            <a href="#"><img class="card-img-top" src="img/events/2017/VisitaHorto-Unileao/visita.jpg" alt="Aula de campo"></a>
                             <div class="card-body">
                                 <p class="card-text">Aula de campo realizada em Juazeiro do Norte, visitando um dos pontos mais importantes da
                                     cidade e [...]</p>
@@ -180,7 +187,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/events/2017/PlantaoPedagogico/PlantaoPedagogico.jpg" alt="Card image cap">
+                            <a href="#"><img class="card-img-top" src="img/events/2017/PlantaoPedagogico/PlantaoPedagogico.jpg" alt="Plantão pedagógico"></a>
                             <div class="card-body">
                                 <p class="card-text">Fim de semestre é assim, com nosso plantão pedagógico, entrega das notas eoutono de 2017.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -194,7 +201,7 @@
 
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/events/2017/BanhoPiscina/BanhoPiscina.jpg" alt="Card image cap">
+                            <a href="#"><img class="card-img-top" src="img/events/2017/BanhoPiscina/BanhoPiscina.jpg" alt="Dia das crianças - 2017"></a>
                             <div class="card-body">
                                 <p class="card-text">Todo dia é dia da criança, mas dessa vez comemoramos de um jeito mais divertido e interessante.</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -207,7 +214,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/events/2017/CircoMagica/CircoMagica.jpg" alt="Card image cap">
+                            <a href="#"><img class="card-img-top" src="img/events/2017/CircoMagica/CircoMagica.jpg" alt="Circo e Mágica CPV"></a>
                             <div class="card-body">
                                 <p class="card-text">Nós não só estudamos como também rimos bastante com o Circo CPV e Show de Mágica!</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -220,7 +227,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/events/2017/CinemaCPV/CinemaCPV.jpg" alt="Card image cap">
+                            <a href="#"><img class="card-img-top" src="img/events/2017/CinemaCPV/CinemaCPV.jpg" alt="Cinema pedagógico"></a>
                             <div class="card-body">
                                 <p class="card-text">Nossas crianças amam assistir um filme de animação comendo uma pipoca deliciosa, umm!</p>
                                 <div class="d-flex justify-content-between align-items-center">
@@ -259,118 +266,118 @@
     </div>
 
     <footer class="text-light">
-            <section class="bg-accessBar">
-                <h2 class="pt-2 pl-4  acessibilidade">SERVIÇOS E UTILIDADES</h2>
-                <hr class="bg-white">
-                <div class="container">
-                    <div class="row">
-                        <nav class="navbar col-lg-4">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item py-0">
-                                    <a class="nav-link" href="#">
-                                        <i class="material-icons mr-3">calendar_today</i>Calendário Escolar
-                                        <p class="text-center acessibilidade">Conheça as atividades do ano letivo.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item py-0">
-                                    <a class="nav-link" href="#">
-                                        <i class="material-icons mr-3">list_alt</i>Boletim Escolar
-                                        <p class="text-center">Acesso dos alunos as notas e frequências.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item py-0">
-                                    <a class="nav-link" href="#">
-                                        <i class="material-icons mr-3">event</i>Eventos
-                                        <p class="text-center">Confira os todos os eventos do colégio.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item py-0">
-                                    <a class="nav-link" href="#">
-                                        <i class="material-icons mr-3">description</i>Projetos
-                                        <p class="text-center">Fique por dentro dos projetos do colégio.</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <nav class="navbar col-lg-4">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item py-0">
-                                    <a class="nav-link" href="#">
-                                        <i class="material-icons mr-3">school</i>Escudo do Colégio
-                                        <p class="text-center">Entenda tudo sobre o nosso escudo.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item py-0">
-                                    <a class="nav-link" href="#">
-                                        <i class="material-icons mr-3">photo_library</i>Galeria de Fotos
-                                        <p class="text-center">Visite nossa galeria de fotos.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item py-0">
-                                    <a class="nav-link" href="#">
-                                        <i class="material-icons mr-3">thumb_up_alt</i>Destaques
-                                        <p class="text-center">Fique por dentro dos nossos destaques.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item py-0">
-                                    <a class="nav-link" href="#">
-                                        <i class="material-icons mr-3">library_books</i>Manual do Aluno
-                                        <p class="text-center">Conheça o manual dos nossos alunos.</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <nav class="navbar col-lg-4">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item py-0">
-                                    <a class="nav-link" href="#">
-                                        <i class="material-icons mr-3">group</i>Nossa Equipe
-                                        <p class="text-center">Conheça a equipe do colégio.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item py-0">
-                                    <a class="nav-link" href="#">
-                                        <i class="material-icons mr-3">music_note</i>Fanfarra
-                                        <p class="text-center">Conheça a fanfarra do colégio.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item py-0">
-                                    <a class="nav-link" href="#">
-                                        <i class="material-icons mr-3">person</i>Professor José Teles
-                                        <p class="text-center">Conheça a história do nosso Professor.</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item py-0">
-                                    <a class="nav-link" href="#">
-                                        <i class="material-icons mr-3">info</i>Sobre o Colégio
-                                        <p class="text-center">Conheça nossa história.</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+        <section class="bg-accessBar">
+            <h2 class="pt-2 pl-4  acessibilidade">SERVIÇOS E UTILIDADES</h2>
+            <hr class="bg-white">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar col-lg-4">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">calendar_today</i>Calendário Escolar
+                                    <p class="text-center acessibilidade">Conheça as atividades do ano letivo.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">list_alt</i>Boletim Escolar
+                                    <p class="text-center">Acesso dos alunos as notas e frequências.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="eventos.html">
+                                    <i class="material-icons mr-3">event</i>Eventos
+                                    <p class="text-center">Confira os todos os eventos do colégio.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">description</i>Projetos
+                                    <p class="text-center">Fique por dentro dos projetos do colégio.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="navbar col-lg-4">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">school</i>Escudo do Colégio
+                                    <p class="text-center">Entenda tudo sobre o nosso escudo.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">photo_library</i>Galeria de Fotos
+                                    <p class="text-center">Visite nossa galeria de fotos.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">thumb_up_alt</i>Destaques
+                                    <p class="text-center">Fique por dentro dos nossos destaques.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">library_books</i>Manual do Aluno
+                                    <p class="text-center">Conheça o manual dos nossos alunos.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="navbar col-lg-4">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">group</i>Nossa Equipe
+                                    <p class="text-center">Conheça a equipe do colégio.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">music_note</i>Fanfarra
+                                    <p class="text-center">Conheça a fanfarra do colégio.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">person</i>Professor José Teles
+                                    <p class="text-center">Conheça a história do nosso Professor.</p>
+                                </a>
+                            </li>
+                            <li class="nav-item py-0">
+                                <a class="nav-link" href="#">
+                                    <i class="material-icons mr-3">info</i>Sobre o Colégio
+                                    <p class="text-center">Conheça nossa história.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-            </section>
-    
-            <div class="bg-barAddress py-2">
-                <address>
-                    <p class="text-center">Copyright © 2015 Colégio Padre Viana. Todos os direitos reservados.</p>
-                </address>
             </div>
-        </footer>
-    
-    
-        <!-- Alto Contraste-->
-        <script src="js/FuncaoAltoContraste.js"></script>
-    
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
-            crossorigin="anonymous "></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
-            crossorigin="anonymous "></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T "
-            crossorigin="anonymous "></script>
+        </section>
+
+        <div class="bg-barAddress py-2">
+            <address>
+                <p class="text-center">Copyright © 2015 Colégio Padre Viana. Todos os direitos reservados.</p>
+            </address>
+        </div>
+    </footer>
+
+
+    <!-- Alto Contraste-->
+    <script src="js/FuncaoAltoContraste.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T "
+        crossorigin="anonymous "></script>
 </body>
 
 </html>
